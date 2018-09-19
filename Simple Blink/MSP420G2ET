@@ -1,0 +1,19 @@
+#include <msp430.h>				
+
+
+/**
+ * blink.c
+ */
+void main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;		// stop watchdog timer
+	P1DIR |= 0x01;					// sets pin1 to an output pin
+
+	volatile unsigned int i;		// volatile to prevent optimization
+
+	while(1)                        //the condition is always true therefore will run the while loop
+	{
+		P1OUT ^= 0x01;				// sets the output pin1 to high
+		for(i=10000; i>0; i--);     // delays for a count of 10000
+	}
+}
