@@ -3,10 +3,10 @@ Now that you have looked at blinking the LED from some built in delay, but what 
 
 # YOU NEED TO CREATE THE FOLLOWING FOLDERS
 * MSP430G2553
-* MSP(FILL IN THE PROCESSOR YOU ARE USING)
+* MSP430F5529
 
 ## README
-Remember to replace this README with your README once you are ready to submit. I would recommend either making a copy of this file or taking a screen shot. There might be a copy of all of these README's in a folder on the top level depending on the exercise. Make sure you talk about how your button is configured (momentary or continuous. Normally open or closed. Does the button press indicate when the LED should be on or off.)
+The code runs on both processors, MSP430G2553 and MSP430F5529. The code utilizes a while loop that is always true. Then an if statement checks the value of the button. The if statement ANDs the input with the button to set as a 1 or 0. If there is a 1, the button is not pressed because of a pull up resistor. If there is a 0 the button has been pressed. This satisfies the if statement to set the LED to 1.
 
 ## Extra Work
 What can we do to make this a little bit more worthy of needing a microcontroller.
