@@ -59,9 +59,6 @@
 //  December 2010
 //   Built with CCS Version 4.2.0 and IAR Embedded Workbench Version: 5.10
 //******************************************************************************
-// Nate Hoffman
-// 9/21/2018
-
 #include <msp430.h>
 
 int main(void)
