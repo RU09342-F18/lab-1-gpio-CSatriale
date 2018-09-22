@@ -58,9 +58,6 @@
 //   April 2009
 //   Built with CCSv4 and IAR Embedded Workbench Version: 4.21
 //******************************************************************************
-// Nate Hoffman
-// 9/21/2018
-
 #include <msp430.h>
 
 int main(void)
