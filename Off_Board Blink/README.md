@@ -15,6 +15,12 @@ You remember those parts bins in the back of the teaching labs? They contain mos
 # YOU NEED TO CREATE THE FOLLOWING FOLDER
 * MSP430G2553
 
+# ReadMe
+This code is only to be run on the MSP430G2553 because of the chip that can be taken off the PCB. The chip will then be put into a breadboard. The code is similar to the multiple blink for the MSP430G2553. A while loop that is always true changes the states of the LED. The first part toggles LED1 then a for loop runs in two parts. The first part is to toggle the second LED and the secocond part is a for loop that delays the processor from changing states to the next instance of the main for loop. 
+
+# Circuitry 
+Power is supplied to the breadboard via the development board which uses jumper wires from the 3.3 V and GND pins. A Red and Green LED were used to demonstrate the multiple blink program. 
+
 ## Extra Work
 Once you get to this point, you are pretty much set in terms of GPIO mastery getting the LEDs to blink, but there are some more exploratory tasks that you can do.
 
