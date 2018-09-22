@@ -66,16 +66,16 @@ int main(void)
   volatile unsigned int i;
   volatile unsigned int j;
 
-  WDTCTL = WDTPW + WDTHOLD;                 // Stop watchdog timer
-  P1DIR |= BIT0;                            // Set P1.0 to output direction
-  P1DIR |= BIT6;                            // Set P1.6 to output direction
+  WDTCTL = WDTPW + WDTHOLD;                 // stops the watchdog timer
+  P1DIR |= BIT0;                            // sets pin1 as an output
+  P1DIR |= BIT6;                            // sets pin1.6 as an output
 
-  while(1)                                  // continuous loop
+  while(1)                                  // condition is always true therefore the loop always runs
   {
-    P1OUT ^= BIT0;                          // XOR P1.0
-    for (j=0;j<5;j++) {                     // Toggle the second led 5 times for each toggle of the first led
-        P1OUT ^= BIT6;                      // XOR P1.6
-        for(i=10000;i>0;i--);               // Delay
+    P1OUT ^= BIT0;                          // xor pin1 with bit0 to toggle 
+    for (j=0;j<5;j++) {                     // the toggle executes 5 times before the next toggle of pin1
+        P1OUT ^= BIT6;                      // xor pin1 with bit6 to toggle the output
+        for(i=10000;i>0;i--);               // delays the processor
     }
   }
 }
