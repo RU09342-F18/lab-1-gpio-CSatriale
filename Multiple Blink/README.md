@@ -7,7 +7,7 @@ Now that we have blinked at least 1 LED, what about blinking multiple LEDS at th
 * MSP4305529
 
 ## README
-The code is optimized to work on two different processors. The MSP430F5529 and MSP430G2553. The code utilizes a while loop which is always true and therefore runs the for loop nested in the while loop. The first command toggles the led, then a for loop toggles the second led 10 times before continuing through the loop. The next for loop delays the processor so nothing changes. 
+The code is optimized to work on two different processors. The MSP430F5529 and MSP430G2553. The code utilizes a while loop which is always true and therefore runs the for loop nested in the while loop. The first command toggles the led, then a for loop toggles the second led 10 times before continuing through the loop. This effect creates two different rates of blinking LED1 and LED2. The next for loop delays the processor so nothing changes. 
 
 ## Extra Work
 When you take a look at the development boards, you are limited to what is built into the platform.
