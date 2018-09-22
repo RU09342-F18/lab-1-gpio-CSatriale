@@ -21,6 +21,9 @@ This code is only to be run on the MSP430G2553 because of the chip that can be t
 # Circuitry 
 Power is supplied to the breadboard via the development board which uses jumper wires from the 3.3 V and GND pins. A Red and Green LED were used to demonstrate the multiple blink program. 
 
+# Video
+https://photos.google.com/u/2/photo/AF1QipMJ_BGH1S_z5kBmxIdCrI01Lf4StzTlaEV0WfHc
+
 ## Extra Work
 Once you get to this point, you are pretty much set in terms of GPIO mastery getting the LEDs to blink, but there are some more exploratory tasks that you can do.
 
